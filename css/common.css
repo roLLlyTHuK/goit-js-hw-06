@@ -36,7 +36,6 @@ button {
 .gallery-item {
   width: 100%;
   display: none;
-  /* Початково ховаємо елементи */
 }
 
 .gallery-img {
