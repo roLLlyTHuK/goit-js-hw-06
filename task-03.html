@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 3</title>
-    <link rel="stylesheet" href="css/common.css" />
-  </head>
-  <body>
-    <p><a href="index.html">Go back</a></p>
 
-    <ul class="gallery"></ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 3</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <style>
+    /**
+  |============================
+  | gallery styles
+  |============================
+*/
+    .gallery {
+      list-style: none;
+      padding: 0;
+    }
 
-    <script src="js/task-03.js" type="module"></script>
-  </body>
+    .gallery-item {
+      width: 100%;
+      display: none;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: auto;
+    }
+
+    /**
+  |============================
+  | gallery styles for task-3
+  |============================
+*/
+    .gallery-hw3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .gallery-hw3 .gallery-item {
+      flex-basis: calc(33.33% - 20px);
+      min-width: 320px;
+      margin: 10px;
+      display: block;
+
+    }
+  </style>
+</head>
+
+<body>
+  <p><a href="index.html">Go back</a></p>
+
+  <ul class="gallery"></ul>
+
+  <script src="js/task-03.js" type="module"></script>
+</body>
+
 </html>
