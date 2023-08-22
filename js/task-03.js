@@ -14,12 +14,15 @@ const images = [
 ];
 // галлерея
 const galleryList = document.querySelector('.gallery');
+
+// FOR варіант
 // const imagesMarkup = [];
 // for (const image of images) {
 //   imagesMarkup.push(`<li class="gallery-item"><img src="${image.url}" alt="${image.alt}" class="gallery-img"></li>`);
 // }
-
 // const result = imagesMarkup.join('');
+
+//MAP variant
 const imagesMarkup = images.map(image => {
   return `<li class="gallery-item"><img src="${image.url}" alt="${image.alt}" class="gallery-img"></li>`;
 }).join('');
