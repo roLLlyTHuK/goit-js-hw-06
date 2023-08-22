@@ -11,6 +11,7 @@ form.addEventListener(`submit`, event => {
         }
         // console.log(`Email: ${email.value}, Password: ${password.value}`);
         
+    //! Передаємо значення в об'єкт data
         const data = {
             email: email.value,
             password: password.value
